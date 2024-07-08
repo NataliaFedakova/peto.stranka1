@@ -69,7 +69,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #efe2fe;
+    color: #fff;
     background-size: cover;
     background-position: center;
 }
@@ -301,7 +301,7 @@ a {
 
 footer {
     background: #181818;
-    color: #efe2fe;
+    color: #fff;
     padding: 20px 0;
 }
 
