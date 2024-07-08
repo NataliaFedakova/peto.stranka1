@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Stolárstvo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="peto.logo1.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="peto.logo.1-02.png" width="100px" alt="Logo" class="logo">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#aboutus">O nás</a></li>
+                <li><a href="#galeria">Galéria</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" style="background-image: url('382124300_825896006212218_6557561769176928639_n.jpg');" id="home" alt="uvodna fotka">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>PT.Stolárstvo</h1>
+                <p>Vstavané skrine,nábytok na mieru</p>
+                <a href="#contact" class="btn">Kontaktuje ma</a>
+            </div>
+        </div>
+    </section>
+    <section id="aboutus" class="content">
+        <div class="photo-container">
+            <img src="your-photo.jpg" alt="Your Photo">
+        </div>
+        <div class="card">
+            <h2>Inovatívne nápady a štýlový dizajn</h2>
+            <p>Ako stolár, prinášam do života váš domov kreatívnym spracovaním dreva a starostlivosťou o detaily. Moja práca je zameraná na výrobu jedinečného nábytku a drevených konštrukcií presne podľa vašich predstáv. S viac ako 20 rokmi skúseností v remesle sa zameriavam na kvalitu, detail a vašu úplnú spokojnosť. Nechajte sa inšpirovať mojimi prácami a kontaktujte ma pre realizáciu vášho individuálneho projektu.</p>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature-card">
+            <i class="fa-regular fa-clock" style="color: #8B5E3C"></i>
+            <h3>Rýchlosť</h3>
+            <p>Moja práca je efektívna a presná, čo znamená rýchle dodanie bez kompromisov.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-pencil" style="color: #8B5E3C"></i>
+            <h3>Perfektný dizajn</h3>
+            <p>Každý kúsok je navrhnutý s precíznosťou a estetickým citom.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-regular fa-handshake" style="color: #8B5E3C"></i>
+            <h3>Spokojnosť</h3>
+            <p>S viac ako 20 rokmi skúseností som získal dôveru viac ako 1000 spokojných zákazníkov</p>
+        </div>
+    </section>
+    <section id="galeria" class="carousel">
+        <button class="carousel-button prev">&lt;</button>
+        <div class="carousel-container">
+            <div class="carousel-item"><img src="384304289_825896379545514_6777245419678801282_n.jpg" alt="Carousel Photo 2"></div>
+            <div class="carousel-item"><img src="382124300_825896006212218_6557561769176928639_n.jpg" alt="Carousel Photo 3"></div>
+            <div class="carousel-item"><img src="fotka1.jpg" alt="Carousel Photo 3"></div>
+            <div class="carousel-item"><img src="fotka2.jpg" alt="Carousel Photo 3"></div>
+            <div class="carousel-item"><img src="fotka3.jpg" alt="Carousel Photo 3"></div>
+            <div class="carousel-item"><img src="drevo.jpg" alt="Carousel Photo 3"></div>
+            
+        </div>
+        <button class="carousel-button next">&gt;</button>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Kontaktujte ma</h2>
+        <form action="mailto:fedakovanatalia15@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Meno a Priezvisko:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Správa:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Odoslať</button>
+        </form>
+    </section>
+    <footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <div class="footer-logo">
+                <img src="peto.logo.png"  width="5000px"  alt="Logo" class="logo">
+            </div>
+            <p><i class="fas fa-phone"></i> <a href="tel:+421 915 446 013">+421 915 446 013</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:fedakovanatalia15@gmail.com">fedakovanatalia15@gmail.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Adresa: Palackého 3, 040 01 Košice</p>
+        </div>
+        <div class="map">
+            <!-- Embed Google Map iframe -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.252221226093!2d21.247172415815344!3d48.71760292927648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473f5edf5ee13f89%3A0x6f1e0ab9d1d5f87e!2sPalack%C3%A9ho%203%2C%20040%2001%20Ko%C5%A1ice%2C%20Slovakia!5e0!3m2!1sen!2sus!4v1625477163450!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 PT. Stolárstvo. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
