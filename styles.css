@@ -433,3 +433,28 @@ footer {
         margin-top: 20px;
     }
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-item img {
+    width: 100%; /* Ensures the image takes up full width of the carousel item */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    object-fit: contain; /* Or use 'cover' for a cropped look */
+}
+
+.carousel-item {
+    aspect-ratio: 16 / 9; /* Sets a specific aspect ratio for the carousel items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+a {
+    display: inline-block;
+    margin: 0 5px; /* Optional spacing between icons */
+}
