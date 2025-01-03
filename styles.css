@@ -435,26 +435,59 @@ footer {
 }
 
 img {
-    max-width: 100%;
     height: auto;
-    display: block;
-}
-
-.carousel-item img {
-    width: 100%; /* Ensures the image takes up full width of the carousel item */
-    height: auto; /* Automatically adjusts height to maintain aspect ratio */
-    object-fit: contain; /* Or use 'cover' for a cropped look */
-}
-
-.carousel-item {
-    aspect-ratio: 16 / 9; /* Sets a specific aspect ratio for the carousel items */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    object-fit: cover; /* Adjust if necessary: 'contain', 'cover', or 'fill' */
 }
 
 a {
     display: inline-block;
     margin: 0 5px; /* Optional spacing between icons */
+}
+
+
+/* General Carousel Item and Image Adjustments */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Max width to center it */
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0;
+    background: #fff;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    width: 100%; /* Ensure image fills the width */
+    height: auto; /* Keep height proportional */
+    object-fit: contain; /* Ensures image is not cropped and maintains its aspect ratio */
+}
+
+/* Mobile-specific Carousel Adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        width: 100%;
+        height: auto; /* Allow the item to adjust height based on content */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-item img {
+        object-fit: contain; /* Make sure the image doesn't crop */
+        width: 100%; /* Full width */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
